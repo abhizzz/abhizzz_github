@@ -1,0 +1,45 @@
+{% extends "layout.html"%}
+{% block content %}
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Bill Generator!!</h1>
+    <p class="lead">
+	{% for user_item in range(1,5) %}
+			{% if user_item <=4 %}
+				<li>{{user_item}} kg clothes is of {{unit_price}} Rupees </li>
+			{% endif %}
+	{% endfor %}
+	{% if user_item >=5 and user_item < 6 %}
+		<li>{{user_item}} kg clothes is of {{unit_price+20}} Rupees </li>
+	{% endif %}
+	{% if user_item >=6 and user_item < 7 %}
+		<li>{{user_item}} kg clothes is of {{unit_price+20*2}} Rupees </li>
+	{% endif %}
+	{% if user_item >=7 and user_item < 8 %}
+		<li>{{user_item}} kg clothes is of{{unit_price+20*3}} Rupees </li>
+	{% endif %}
+	{% if user_item >=8 and user_item <9 %}
+		<li>{{user_item}} kg clothes is of {{unit_price+20*4}} Rupees </li>
+	{% endif %}
+	{% if user_item >=9 and user_item < 10 %}
+		<li>{{user_item}} kg clothes is of {{unit_price+20*5}} Rupees </li>
+	{% endif %}
+	{% if user_item >=10 and user_item < 11 %}
+		<li>{{user_item}} kg clothes is of {{unit_price+20*6}} Rupees </li>
+	{% endif %}
+	{% if user_item >=	11 and user_item < 12 %}
+		<li>{{user_item}} kg clothes is of {{unit_price+20*7}} Rupees </li>
+	{% endif %}
+	{% if user_item >=12 and user_item < 13 %}
+		<li>{{user_item}} kg clothes is of {{unit_price+20*8}} Rupees </li>
+	{% endif %}
+	</p>
+  </div>
+</div>
+
+{% endblock content %}
+
+
+
+
